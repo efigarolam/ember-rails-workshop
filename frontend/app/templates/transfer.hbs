@@ -13,9 +13,11 @@
           </tr>
       </thead>
       <tbody>
-          {{#each model as |pokemon|}}
+          {{#each sortedPokemons as |pokemon|}}
               {{transferable-pokemon model=pokemon}}
           {{/each}}
+
+          <button type="button" class="btn btn-info" {{action 'sort'}}>Sort</button>
       </tbody>
   </table>
 </div>
