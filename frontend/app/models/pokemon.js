@@ -4,5 +4,6 @@ export default DS.Model.extend({
   name: DS.attr(),
   information: DS.attr(),
   imageUrl: DS.attr(),
-  combatPower: DS.attr()
+  combatPower: DS.attr(),
+  createdAt: DS.attr()
 });

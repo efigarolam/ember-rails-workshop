@@ -1,0 +1,6 @@
+<td>{{model.id}}</td>
+<td><img style="width:20px;" src="{{if model.imageUrl model.imageUrl "/images/default.png"}}" alt="{{model.name}}"></td>
+<td>{{model.name}}</td>
+<td>{{model.combatPower}}</td>
+<td>{{model.createdAt}}</td>
+<td><button type="button" class="btn btn-danger" {{action 'transfer' model}}>Transfer</button></td>

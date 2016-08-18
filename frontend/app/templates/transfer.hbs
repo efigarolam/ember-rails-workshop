@@ -1,1 +1,21 @@
-{{outlet}}
+<div class="panel panel-default">
+  <div class="panel-heading">Transferable Pokemons</div>
+
+  <table class="table">
+      <thead>
+          <tr>
+              <th>ID</th>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Combat Power</th>
+              <th>Captured At</th>
+              <th>Transfer?</th>
+          </tr>
+      </thead>
+      <tbody>
+          {{#each model as |pokemon|}}
+              {{transferable-pokemon model=pokemon}}
+          {{/each}}
+      </tbody>
+  </table>
+</div>
