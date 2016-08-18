@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 gem 'rails', '4.2.6'
 
+gem 'active_model_serializers', '~> 0.10.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'ember-cli-rails'
 gem 'jbuilder', '~> 2.0'

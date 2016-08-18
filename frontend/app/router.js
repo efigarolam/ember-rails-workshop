@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('capture');
+  this.route('transfer');
 });
 
 export default Router;
