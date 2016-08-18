@@ -1,0 +1,22 @@
+<div class="row capture">
+  <div class="col-md-6 col-md-offset-3">
+    <h2 style="text-align:center;">Update {{model.name}}</h2>
+    <hr />
+
+    {{#if isExpanded}}
+        <p class="text-center">
+            <img src="{{if model.imageUrl model.imageUrl "/images/default.png"}}" />
+        </p>
+
+        <p class="text-center">
+            <button type="button" class="btn btn-danger" {{action "toggleImage"}}>Hide Image</button>
+        </p>
+    {{else}}
+        <p class="text-center">
+            <button type="button" class="btn btn-primary" {{action "toggleImage"}}>Show Image</button>
+        </p>
+    {{/if}}
+
+    {{capture-pokemon pokemon=model save="onSave"}}
+  </div>
+</div>
