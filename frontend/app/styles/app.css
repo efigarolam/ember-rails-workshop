@@ -1,0 +1,18 @@
+body { padding-top: 50px; }
+
+.poke-list .row {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+  height: 70px;
+}
+
+.poke-logo img {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.poke-desc h4 {
+  margin-top: 12px;
+}
