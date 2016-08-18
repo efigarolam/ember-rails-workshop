@@ -1,37 +1,29 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/">Poke Poke</a>
-        </div>
-
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active">
-            {{#link-to 'capture'}}Capture{{/link-to}}
-          </li>
-          <li>
-            {{#link-to 'transfer'}}Transfer to Professor{{/link-to}}
-          </li>
-        </ul>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Poke Poke</a>
     </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active">
+        {{#link-to 'capture'}}Capture{{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'transfer'}}Transfer to Professor{{/link-to}}
+        </li>
+    </ul>
+  </div>
 </nav>
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-2 poke-list">
-            <div class="row">
-                <div class="col-md-4 poke-logo">
-                    <img src="images/default.png" alt="default" />
-                </div>
-                <div class="col-md-8 poke-desc">
-                    <h4>Pikachu</h4>
-                    <p>
-                        <strong>CP:</strong> 200
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-10">
-          {{outlet}}
-        </div>
+  <div class="row">
+    <div class="col-md-2 poke-list">
+      {{#each model as |pokemon|}}
+        {{poke-list-item item=pokemon}}
+      {{/each}}
     </div>
+    <div class="col-md-10">
+      {{outlet}}
+    </div>
+  </div>
 </div>

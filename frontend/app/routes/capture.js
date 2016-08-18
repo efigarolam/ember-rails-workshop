@@ -12,6 +12,14 @@ export default Ember.Route.extend({
       if(model.get('isNew')) {
         model.deleteRecord();
       }
+    },
+
+    onSave(pokemon) {
+      var self = this;
+
+      pokemon.save().then(function() {
+        self.transitionTo('index');
+      });
     }
   }
 });
