@@ -1,5 +1,5 @@
 {{#if item.name}}
-  <div class="row">
+  <div class="row" {{action 'showPokemon' item.id}}>
     <div class="col-md-4 poke-logo">
       <img src="{{if item.imageUrl item.imageUrl "/images/default.png"}}" alt="default" />
     </div>

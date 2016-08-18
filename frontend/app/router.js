@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('capture');
   this.route('transfer');
+  this.route('pokemon', { path: '/pokemon/:pokemon_id' });
 });
 
 export default Router;
